@@ -1,0 +1,80 @@
+.shop {
+	background-image: url("http://i.imgur.com/kg3Lf4U.jpg");
+	width: 1000px;
+	background-repeat: no-repeat;
+	margin-top: 0px;
+	height: 194px;
+	margin-top:0;
+	z-index: 1;
+	/* border-style: solid; */
+	/* border-color:red; */
+	background-size: 100% 100%;
+}
+.topnav {
+	left: -1em;
+    top: 10px;
+    position: fixed;
+}
+
+.bottomnav {
+	position: fixed;
+	bottom: 10px;
+	left: 3em;
+}
+button {
+	background-color: red;
+	border-radius: 28px;
+	padding: 14px 18px;
+	width: 260px;
+	font-size: 20pt;
+	color:white;
+	}
+.navbutton {
+  list-style-type: none;
+  margin-top:4em;
+  padding: 0em 0em 0em 7em;
+}
+.topnav li {
+	display:inline;
+}
+.bottomnav li {
+	display:inline;
+}
+input{
+	background-color: red;
+    border-radius: 0;
+    padding: 47px 18px;
+    width: 34em;
+    color: white;
+    font-size: 20pt;
+	box-sizing: border-box;
+	box-shadow: 10px 10px 5px #888888;
+}
+select {
+	background-color: red;
+    border-radius: 0;
+    padding: 47px 18px;
+    width: 34em;
+    color: #FFFFFF;
+    height: 4em;
+    font-size: 20pt;
+	box-sizing: border-box;
+	box-shadow: 10px 10px 5px #888888;
+}
+.page2 {
+margin: 26em 0px 0px 0em;
+}
+.catdividers > li {
+	background-color: red;
+}
+li {
+	margin: 10px 0;
+	font-size:19pt;
+	list-style: none;
+}
+h2 {
+	font-size: 30pt;
+	color: white;
+}
+
+
