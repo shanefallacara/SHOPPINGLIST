@@ -5,25 +5,16 @@
 	<title>Shopping List</title>
 	<link rel="stylesheet" href="CSS/mystyle.css">
 	<script src="https://code.jquery.com/jquery.min.js"></script>
-	<script src="JS/shop.js"></script>
+	<script src="JS/shoppg1.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
 <body>
 	<div class= "topnav">
 		<div class= "shop"></div>
-			<ul class="navbutton">
-				<li>
-					<button type="button" onclick="alert('Hello world!')">ALL ITEMS</button>
-				</li>
-				<li>
-					<button type="button" onclick="alert('Hello world!')">PURCHASED</button>
-				</li>
-				<li>
-					<button type="button" onclick="alert('Hello world!')">TO PURCHASE</button>
-				</li>
-			</ul>
+			<button type="button" id="allitems">ALL ITEMS</button>
 		</div>
 	<div class="page1">
-		<input class="item" type="text" placeholder="Please Enter Item To Add Here"><br>
+		<input class="item" id="add-todo" type="text" placeholder="Please Enter Item To Add Here"><br>
 		<div class="selectcat">Select Category</div>
 			<select class="category">
 				<option value="Bread/Grains">Bread/Grains</option>
@@ -31,21 +22,39 @@
   				<option value="Dressings/Oils">Dressings/Oils</option>
   				<option value="Other">Other</option>
 			</select>
-		</div>
 			<button id="add-button">Add to my list</button>	
+		</div>		
+	</div>
+	<div class="page2">
+		<ul class="catdividers">
+			<li class="Bread/Grains">
+				<h2>Bread/Grains</h2></li>
+				<ul>
+					<li>White Bread</li>
+					<li>Onion Rolls</li>
+				</ul>
+			<li class="Meats/Fish">
+				<h2>Meats/Fish</h2></li>
+				<ul>
+					<li>Steak</li>
+					<li>Chicken Legs</li>
+				</ul>
+			<li class="Dressings/Oils">
+				<h2>Dressings/Oils</h2></li>
+				<ul>
+					<li>Balsalmic Vinegar</li>
+					<li>Italian Dressing</li>
+				</ul>
+			<li class="Other">
+				<h2>Other</h2></li>
+				<ul>
+					<li>Brocolli</li>
+					<li>Pickles</li>
+				</ul>
+		</ul>
 	</div>
     <div class= "bottomnav">
-		<ul class="buttons">
-			<li>
-				<button type="button" onclick="alert('Hello world!')">ADD ITEMS</button>
-			</li>
-			<li>
-				<button type="button" onclick="alert('Hello world!')">RECIPES</button>
-			</li>
-			<li>
-				<button type="button" onclick="alert('Hello world!')">SHARE</button>
-			</li>
-		</ul>
+		<button type="button" id="additems">ADD ITEMS</button>
 	</div>
 </body>
 </html>

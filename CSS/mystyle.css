@@ -11,31 +11,31 @@
 	background-size: 100% 100%;
 }
 .topnav {
-	margin-left: -1em;
-    margin-top: -32em;
+	top: 10px;
     position: fixed;
+    text-align:center;
 }
 
 .bottomnav {
 	position: fixed;
-	left:3em;
 	bottom:10px;
+	text-align:center;
+	width: 1000px;
+	z-index: 1;
+	background-size: 100% 100%;
 }
 button {
 	background-color: red;
-	border-radius: 28px;
-	padding: 14px 18px;
-	width: 260px;
+	border-radius: 201px;
+	padding: 39px 18px;
+	width: 500px;
 	font-size: 20pt;
 	color:white;
 	}
-.navbutton {
-  list-style-type: none;
-  margin-top:4em;
-  padding: 0em 0em 0em 7em;
-}
-li {
-	display:inline;
+ul li {
+	margin: 10px 0;
+	font-size:19pt;
+	list-style: none;
 }
 input{
 	background-color: red;
@@ -77,7 +77,7 @@ li ul {
 	color:white;
 }
 .page2 {
-	margin: 32em 0px 0px 0em;
+	margin: -17em 0px 0px 0em;
 }
 .catdividers {
 	margin: 50em 0em 0em 0em;
@@ -98,5 +98,14 @@ li ul {
    color: white; opacity:1;  
 }
 #add-button {
-	margin: 2em 0em 0em 25em;
+	margin: 2em 0em 0em 9em;
+	background-color:green;
+}
+.catdividers > li {
+	background-color: red;
+}
+h2 {
+	font-size: 30pt;
+	color: white;
+	background-color:red;
 }

@@ -25,3 +25,11 @@ $(document).ready(function () {
 	});
 
 });
+$(document).ready(function(){
+    $("#allitems").click(function(){
+        $(".page1").hide(); $(".page2").show();
+    });
+     $("#additems").click(function(){
+        $(".page2").hide(); $(".page1").show();
+   	});
+});
