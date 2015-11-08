@@ -9,19 +9,14 @@ $(document).ready(function () {
 				$('input#add-todo').val("");
 		} else { 
 
-		$('ul').append('<li class="todo"><button class="item">Done</button>' + $('input#add-todo').val() + '</li>');
+		$('ul').append('<li>' + $('input#add-todo').val() + '</li>');
 		$('input#add-todo').val("");
 		$('#error').hide();
+		$(".page1").hide(); $(".page2").show();
+
 
 		};	
 	
-	});
-
-	// Change class when user clicks Done button	
-
-	$('ul').on('click', '.item', function() {
-		$(this).closest('li').toggleClass('todo done');
-		$(this).remove();
 	});
 
 });
