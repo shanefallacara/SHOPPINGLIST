@@ -97,3 +97,6 @@ li ul {
 :-ms-input-placeholder {  
    color: white; opacity:1;  
 }
+#add-button {
+	margin: 2em 0em 0em 25em;
+}
