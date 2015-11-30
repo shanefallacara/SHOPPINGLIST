@@ -8,8 +8,8 @@ $(document).ready(function () {
 				$('#error').show();
 				$('input#add-todo').val("");
 		} else { 
-
-		$('ul').append('<li>' + $('input#add-todo').val() + '</li>');
+		var cat = $(".category");
+		$("ul li class= cat").append('<li>' + $('.item').val() + '</li>');
 		$('input#add-todo').val("");
 		$('#error').hide();
 		$(".page1").hide(); $(".page2").show();
