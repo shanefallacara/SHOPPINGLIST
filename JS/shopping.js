@@ -3,13 +3,13 @@ $(document).ready(function () {
 	// Validate text box, then add value in text box to list
 
 	$('#add-button').click(function() {
-		if( $('input#add-todo').val().trim().length == 0 ) {
+		if( $('input.item').val().trim().length == 0 ) {
 				// alert("put something here");
 				$('#error').show();
 				$('input#add-todo').val("");
 		} else { 
-		var cat = $(".category");
-		$("ul li class= cat").append('<li>' + $('.item').val() + '</li>');
+		var cat = $(".category").val();
+		$("ul li."+cat).next().append('<li>' + $('.item').val() + '</li>');
 		$('input#add-todo').val("");
 		$('#error').hide();
 		$(".page1").hide(); $(".page2").show();
