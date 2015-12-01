@@ -10,7 +10,7 @@ $(document).ready(function () {
 		} else { 
 		var cat = $(".category").val();
 		$("ul li."+cat).next().append('<li>' + $('.item').val() + '</li>');
-		$('input#add-todo').val("");
+		$('input .items').val("");
 		$('#error').hide();
 		$(".page1").hide(); $(".page2").show();
 
